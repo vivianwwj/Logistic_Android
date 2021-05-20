@@ -1,1 +1,2 @@
+<<<<<<< HEAD
 include ':app', ':outStorage', ':login', ':basicInfo', ':InStorage','firstpage'
