@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_return_materialDetail"
+        style="@style/overall_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent2"
+        android:text="返回"
+        app:layout_constraintBottom_toBottomOf="@+id/button_update_materialDetail"
+        app:layout_constraintEnd_toStartOf="@+id/button_update_materialDetail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_update_materialDetail" />
+
+    <TextView
+        android:id="@+id/textView_ifDeleted_materialDetail"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="ID"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView102"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView102"
+        app:layout_constraintTop_toTopOf="@+id/textView102" />
+
+    <TextView
+        android:id="@+id/textView_createTime_materialDetail"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="ID"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView100"
+        app:layout_constraintTop_toTopOf="@+id/textView100" />
+
+    <TextView
+        android:id="@+id/textView_updateTime_materialDetail"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="ID"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView104"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView104"
+        app:layout_constraintTop_toTopOf="@+id/textView104" />
+
+    <TextView
+        android:id="@+id/textView_id_materialDetail"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="ID"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView98"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView98"
+        app:layout_constraintTop_toTopOf="@+id/textView98" />
+
+    <TextView
+        android:id="@+id/textView_corporation_materialDetail"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="ID"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView99"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView99"
+        app:layout_constraintTop_toTopOf="@+id/textView99" />
+
+    <EditText
+        android:id="@+id/editText_figuerNumber_materialDetail"
+        style="@style/overall_editView"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView101"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView101"
+        app:layout_constraintTop_toTopOf="@+id/textView101" />
+
+    <EditText
+        android:id="@+id/editText_name_materialDetail"
+        style="@style/overall_editView"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView103"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView103"
+        app:layout_constraintTop_toTopOf="@+id/textView103" />
+
+    <TextView
+        android:id="@+id/textView102"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="是否已删除"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView_ifDeleted_materialDetail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView99" />
+
+    <TextView
+        android:id="@+id/textView103"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="物料名称"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editText_name_materialDetail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView96" />
+
+    <TextView
+        android:id="@+id/textView104"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="修改时间"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView_updateTime_materialDetail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView100" />
+
+    <TextView
+        android:id="@+id/textView99"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="所属承运方"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView_corporation_materialDetail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView98" />
+
+    <TextView
+        android:id="@+id/textView100"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="创建时间"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView_createTime_materialDetail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
+    <TextView
+        android:id="@+id/textView101"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="图号"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editText_figuerNumber_materialDetail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView103" />
+
+    <TextView
+        android:id="@+id/textView98"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="ID"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView_id_materialDetail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+    <TextView
+        android:id="@+id/textView85"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:text="物料详情"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView96"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:text="参数"
+        app:layout_constraintEnd_toStartOf="@+id/textView97"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+    <TextView
+        android:id="@+id/textView97"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="值"
+        app:layout_constraintBottom_toTopOf="@+id/textView103"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView96"
+        app:layout_constraintTop_toTopOf="@+id/textView96"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_update_materialDetail"
+        style="@style/overall_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="修改"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_return_materialDetail" />
+</android.support.constraint.ConstraintLayout>

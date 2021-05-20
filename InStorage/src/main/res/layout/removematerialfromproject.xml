@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/corporationKey_preview30"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="选择"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/corporationKey_preview32"
+        app:layout_constraintEnd_toStartOf="@+id/corporationKey_preview31"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/corporationKey_preview32" />
+
+    <TextView
+        android:id="@+id/corporationKey_preview31"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="ID"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/corporationKey_preview32"
+        app:layout_constraintEnd_toStartOf="@+id/corporationKey_preview32"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/corporationKey_preview30"
+        app:layout_constraintTop_toTopOf="@+id/corporationKey_preview32" />
+
+    <TextView
+        android:id="@+id/corporationKey_preview32"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="物料名称"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/corporationKey_preview33"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toEndOf="@+id/corporationKey_preview31"
+        app:layout_constraintTop_toBottomOf="@+id/textView137" />
+
+    <TextView
+        android:id="@+id/corporationKey_preview33"
+        style="@style/overall_content"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="图号"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/corporationKey_preview32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toEndOf="@+id/corporationKey_preview32"
+        app:layout_constraintTop_toTopOf="@+id/corporationKey_preview32" />
+
+    <TextView
+        android:id="@+id/textView137"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:text="为工程添加物料信息"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView3" />
+
+    <Button
+        android:id="@+id/button_complete_removeMaterialFromProject"
+        style="@style/overall_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent2"
+        android:text="返回"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_addMaterial_removeMaterialFromProject"
+        app:layout_constraintEnd_toStartOf="@+id/button_addMaterial_removeMaterialFromProject"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_addMaterial_removeMaterialFromProject" />
+
+    <Button
+        android:id="@+id/button_addMaterial_removeMaterialFromProject"
+        style="@style/overall_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="添加物料"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_removeMaterial_removeMaterialFromProject"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_complete_removeMaterialFromProject" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:text="选择工程项目"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/corporationKey_preview5"
+        app:layout_constraintStart_toStartOf="@+id/corporationKey_preview8"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/corporationKey_preview8"
+        style="@style/textview_allgrade_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="选择"
+        app:layout_constraintBottom_toBottomOf="@+id/corporationKey_preview6"
+        app:layout_constraintEnd_toStartOf="@+id/corporationKey_preview5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/corporationKey_preview6" />
+
+    <TextView
+        android:id="@+id/corporationKey_preview5"
+        style="@style/textview_allgrade_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="ID"
+        app:layout_constraintBottom_toBottomOf="@+id/corporationKey_preview6"
+        app:layout_constraintEnd_toStartOf="@+id/corporationKey_preview6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/corporationKey_preview8"
+        app:layout_constraintTop_toTopOf="@+id/corporationKey_preview6" />
+
+    <TextView
+        android:id="@+id/corporationKey_preview6"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:text="物料名称"
+        app:layout_constraintEnd_toStartOf="@+id/corporationKey_preview7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toEndOf="@+id/corporationKey_preview5"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_selectProject_removeMaterialFromProject" />
+
+    <TextView
+        android:id="@+id/corporationKey_preview7"
+        style="@style/textview_allgrade_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="图号"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/corporationKey_preview6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toEndOf="@+id/corporationKey_preview6"
+        app:layout_constraintTop_toTopOf="@+id/corporationKey_preview6" />
+
+    <TextView
+        android:id="@+id/textView22"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="工程物料信息"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/corporationKey_preview6">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_materialInProject_removeMaterialFromProject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <Spinner
+        android:id="@+id/spinner_selectProject_removeMaterialFromProject"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/button_removeMaterial_removeMaterialFromProject"
+        style="@style/overall_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="移除物料"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_addMaterial_removeMaterialFromProject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_addMaterial_removeMaterialFromProject"
+        app:layout_constraintTop_toTopOf="@+id/button_addMaterial_removeMaterialFromProject" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_addMaterial_removeMaterialFromProject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/corporationKey_preview32">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_material_removeMaterialFromProject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

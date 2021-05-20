@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.buildinstorageform">
+    <!-- 添加访问网络的授权 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".InStorage_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateInStorageForm_Activity"></activity>
+        <activity android:name=".QueryInStorageForm_Activity"></activity>
+        <activity android:name=".InStorageForm_Detail_Activity"></activity>
+        <activity android:name=".CreateProject_Activity"></activity>
+        <activity android:name=".RemoveMaterialFromProject_Activity"></activity>
+        <activity android:name=".RemoveProductFromInStorageForm_Activity"></activity>
+        <activity android:name=".CreateMaterial_Activity"></activity>
+        <activity android:name=".CreateProduct_Activity"></activity>
+        <activity android:name=".MaterialInfo_Activity"></activity>
+        <activity android:name=".ProductInfo_Activity"></activity>
+        <activity android:name=".ProjectInfo_Activity"></activity>
+        <activity android:name=".MaterialDetail_Activity"></activity>
+        <activity android:name=".ProductDetail_Activity"></activity>
+        <activity android:name=".ProjectDetail_Activity"></activity>
+    </application>
+
+</manifest>

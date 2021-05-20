@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_createProduct_productInfo"
+        style="@style/overall_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="创建货物"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_queryProduct_productInfo"
+        app:layout_constraintEnd_toStartOf="@+id/button_queryProduct_productInfo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_return_productInfo"
+        app:layout_constraintTop_toTopOf="@+id/button_queryProduct_productInfo" />
+
+    <Button
+        android:id="@+id/button_return_productInfo"
+        style="@style/overall_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent2"
+        android:text="返回"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_queryProduct_productInfo"
+        app:layout_constraintEnd_toStartOf="@+id/button_createProduct_productInfo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_queryProduct_productInfo" />
+
+    <TextView
+        android:id="@+id/corporationKey_preview22"
+        style="@style/textview_allgrade_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="选择"
+        app:layout_constraintBottom_toBottomOf="@+id/corporationKey_preview24"
+        app:layout_constraintEnd_toStartOf="@+id/corporationKey_preview23"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/corporationKey_preview24" />
+
+    <TextView
+        android:id="@+id/corporationKey_preview23"
+        style="@style/textview_allgrade_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="ID"
+        app:layout_constraintBottom_toBottomOf="@+id/corporationKey_preview24"
+        app:layout_constraintEnd_toStartOf="@+id/corporationKey_preview24"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/corporationKey_preview22"
+        app:layout_constraintTop_toTopOf="@+id/corporationKey_preview24" />
+
+    <TextView
+        android:id="@+id/corporationKey_preview24"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:text="货物名称"
+        app:layout_constraintEnd_toStartOf="@+id/corporationKey_preview25"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toEndOf="@+id/corporationKey_preview23"
+        app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+    <TextView
+        android:id="@+id/corporationKey_preview25"
+        style="@style/textview_allgrade_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="状态"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/corporationKey_preview24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toEndOf="@+id/corporationKey_preview24"
+        app:layout_constraintTop_toTopOf="@+id/corporationKey_preview24" />
+
+    <Spinner
+        android:id="@+id/spinner_status_productInfo"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView86"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView86"
+        app:layout_constraintTop_toTopOf="@+id/textView86" />
+
+    <EditText
+        android:id="@+id/editText_packetNumber_productInfo"
+        style="@style/overall_editView"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="1dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView83"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView83"
+        app:layout_constraintTop_toTopOf="@+id/textView83" />
+
+    <TextView
+        android:id="@+id/textView87"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="1"
+        android:text="货物信息查询结果"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+    <TextView
+        android:id="@+id/textView86"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:text="货物状态"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:text="货物名称"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:text="包号"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:text="所属承运方"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+    <TextView
+        android:id="@+id/textView76"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="1"
+        android:text="货物信息"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_queryProduct_productInfo"
+        style="@style/overall_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="查询货物"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_deleteProduct_productInfo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_createProduct_productInfo" />
+
+    <Button
+        android:id="@+id/button_deleteProduct_productInfo"
+        style="@style/overall_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="删除货物"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_queryProduct_productInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_queryProduct_productInfo"
+        app:layout_constraintTop_toTopOf="@+id/button_queryProduct_productInfo" />
+
+    <EditText
+        android:id="@+id/editText_name_productInfo"
+        style="@style/overall_editView"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="1dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView78"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView78"
+        app:layout_constraintTop_toTopOf="@+id/textView78" />
+
+    <Spinner
+        android:id="@+id/spinner_corporation_productInfo"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView84"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView84"
+        app:layout_constraintTop_toTopOf="@+id/textView84" />
+
+    <ScrollView
+        android:id="@+id/scrollView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_createProduct_productInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/corporationKey_preview24">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_product_productInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="294dp" />
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

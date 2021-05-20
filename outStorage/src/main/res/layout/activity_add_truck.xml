@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="车牌号"
+        app:layout_constraintBottom_toBottomOf="@+id/et_car_number"
+        app:layout_constraintEnd_toStartOf="@+id/et_car_number" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="行驶证号码"
+        app:layout_constraintBottom_toBottomOf="@+id/et_car_license"
+        app:layout_constraintEnd_toStartOf="@+id/et_car_license" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="车辆识别号"
+        app:layout_constraintBottom_toBottomOf="@+id/et_car_id"
+        app:layout_constraintEnd_toStartOf="@+id/et_car_id" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="所属单位"
+        app:layout_constraintBottom_toBottomOf="@+id/et_affiliation"
+        app:layout_constraintEnd_toStartOf="@+id/et_affiliation" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="驾驶员"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_driver"
+        app:layout_constraintEnd_toEndOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/et_car_number"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="20"
+        app:layout_constraintBottom_toTopOf="@+id/et_car_license"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_car_license"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        app:layout_constraintBottom_toTopOf="@+id/et_car_id"
+        app:layout_constraintEnd_toEndOf="@+id/et_car_number"
+        app:layout_constraintTop_toBottomOf="@+id/et_car_number" />
+
+    <EditText
+        android:id="@+id/et_car_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        app:layout_constraintBottom_toTopOf="@+id/et_affiliation"
+        app:layout_constraintEnd_toEndOf="@+id/et_car_license"
+        app:layout_constraintTop_toBottomOf="@+id/et_car_license" />
+
+    <EditText
+        android:id="@+id/et_affiliation"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        app:layout_constraintBottom_toTopOf="@+id/sp_driver"
+        app:layout_constraintEnd_toEndOf="@+id/et_car_id"
+        app:layout_constraintTop_toBottomOf="@+id/et_car_id" />
+
+    <Spinner
+        android:id="@+id/sp_driver"
+        android:layout_width="210dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add"
+        app:layout_constraintEnd_toEndOf="@+id/et_affiliation"
+        app:layout_constraintTop_toBottomOf="@+id/et_affiliation" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="200dp"
+        android:text="创建"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="*"
+        android:textColor="#F00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+</android.support.constraint.ConstraintLayout>

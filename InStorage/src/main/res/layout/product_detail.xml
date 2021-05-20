@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="1dp">
+
+    <Button
+        android:id="@+id/button_return_productDetail"
+        style="@style/overall_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:text="返回"
+        app:layout_constraintBottom_toBottomOf="@+id/button_update_productDetail"
+        app:layout_constraintEnd_toStartOf="@+id/button_update_productDetail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_update_productDetail" />
+
+    <TextView
+        android:id="@+id/textView112"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="货物详情"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView113"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:text="参数"
+        app:layout_constraintEnd_toStartOf="@+id/textView114"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView112" />
+
+    <TextView
+        android:id="@+id/textView114"
+        style="@style/overall_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="值"
+        app:layout_constraintBottom_toBottomOf="@+id/textView113"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView113"
+        app:layout_constraintTop_toTopOf="@+id/textView113" />
+
+    <Button
+        android:id="@+id/button_update_productDetail"
+        style="@style/overall_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="修改"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_return_productDetail" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_update_productDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView113">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText_weight_productDetail"
+                style="@style/overall_editView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView141"
+                app:layout_constraintTop_toBottomOf="@+id/editText_volume_productDetail" />
+
+            <EditText
+                android:id="@+id/editText_volume_productDetail"
+                style="@style/overall_editView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView139"
+                app:layout_constraintTop_toBottomOf="@+id/editText_height_productDetail" />
+
+            <EditText
+                android:id="@+id/editText_height_productDetail"
+                style="@style/overall_editView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView140"
+                app:layout_constraintTop_toBottomOf="@+id/editText_width_productDetail" />
+
+            <TextView
+                android:id="@+id/textView_status_productDetail"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:text="ID"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView128"
+                app:layout_constraintTop_toBottomOf="@+id/textView_ifDeleted_productDetail" />
+
+            <TextView
+                android:id="@+id/textView127"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="是否已删除"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textView_ifDeleted_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView126" />
+
+            <TextView
+                android:id="@+id/textView_createTime_productDetail"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:text="ID"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView129"
+                app:layout_constraintTop_toBottomOf="@+id/textView_status_productDetail" />
+
+            <TextView
+                android:id="@+id/textView107"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="所属物料"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_material_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView105" />
+
+            <TextView
+                android:id="@+id/textView108"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="仓库"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_wareHouse_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView109" />
+
+            <TextView
+                android:id="@+id/textView_ifDeleted_productDetail"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:text="ID"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView127"
+                app:layout_constraintTop_toBottomOf="@+id/textView_inStorageForm_productDetail" />
+
+            <TextView
+                android:id="@+id/textView129"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="创建时间"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textView_createTime_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView128" />
+
+            <TextView
+                android:id="@+id/textView_corporation_productDetail"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:text="ID"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView125"
+                app:layout_constraintTop_toBottomOf="@+id/textView_project_productDetail" />
+
+            <TextView
+                android:id="@+id/textView126"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="所属入库单"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textView_inStorageForm_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView125" />
+
+            <TextView
+                android:id="@+id/textView130"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorAccent2"
+                android:text="修改时间"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textView_updateTime_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView129" />
+
+            <Spinner
+                android:id="@+id/spinner_packetType_productDetail"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView109"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_material_productDetail" />
+
+            <TextView
+                android:id="@+id/textView109"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="包装类型"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_packetType_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView107" />
+
+            <TextView
+                android:id="@+id/textView_inStorageForm_productDetail"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:text="ID"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView126"
+                app:layout_constraintTop_toBottomOf="@+id/textView_corporation_productDetail" />
+
+            <TextView
+                android:id="@+id/textView128"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="状态"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textView_status_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView127" />
+
+            <Spinner
+                android:id="@+id/spinner_material_productDetail"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView107"
+                app:layout_constraintTop_toBottomOf="@+id/editText_packetNumber_productDetail" />
+
+            <EditText
+                android:id="@+id/editText_name_productDetail"
+                style="@style/overall_editView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView106"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_project_productDetail"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:text="ID"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView110"
+                app:layout_constraintTop_toBottomOf="@+id/textView_id_productDetail" />
+
+            <TextView
+                android:id="@+id/textView106"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="物料名称"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/editText_name_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView110"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="所属项目"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textView_project_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView111" />
+
+            <EditText
+                android:id="@+id/editText_packetNumber_productDetail"
+                style="@style/overall_editView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView105"
+                app:layout_constraintTop_toBottomOf="@+id/editText_name_productDetail" />
+
+            <TextView
+                android:id="@+id/textView125"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="所属承运方"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textView_corporation_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+            <TextView
+                android:id="@+id/textView111"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="ID"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textView_id_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView141" />
+
+            <Spinner
+                android:id="@+id/spinner_wareHouse_productDetail"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView108"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_packetType_productDetail" />
+
+            <TextView
+                android:id="@+id/textView105"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="包号"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/editText_packetNumber_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView106" />
+
+            <TextView
+                android:id="@+id/textView_id_productDetail"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:text="ID"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView111"
+                app:layout_constraintTop_toBottomOf="@+id/editText_weight_productDetail" />
+
+            <TextView
+                android:id="@+id/textView_updateTime_productDetail"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:text="ID"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView130"
+                app:layout_constraintTop_toBottomOf="@+id/textView_createTime_productDetail" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="货物长度"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/editText_length_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+            <EditText
+                android:id="@+id/editText_length_productDetail"
+                style="@style/overall_editView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/editText_wareHouseLocation_productDetail" />
+
+            <EditText
+                android:id="@+id/editText_width_productDetail"
+                style="@style/overall_editView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/editText_length_productDetail" />
+
+            <TextView
+                android:id="@+id/textView141"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="货物重量"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/editText_weight_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView139" />
+
+            <TextView
+                android:id="@+id/textView14"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="货物宽度"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/editText_width_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView140"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="货物高度"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/editText_height_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView139"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="货物体积"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/editText_volume_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView140" />
+
+            <TextView
+                android:id="@+id/textView121"
+                style="@style/overall_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="所在库位"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/editText_wareHouseLocation_productDetail"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView108"
+                android:layout_marginEnd="1dp"
+                android:layout_marginStart="1dp" />
+
+            <EditText
+                android:id="@+id/editText_wareHouseLocation_productDetail"
+                style="@style/overall_editView"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView121"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_wareHouse_productDetail" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

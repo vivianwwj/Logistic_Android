@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/plate_id_2.iml" filepath="$PROJECT_DIR$/plate_id_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InStorage/plate_id_2.InStorage.iml" filepath="$PROJECT_DIR$/.idea/modules/InStorage/plate_id_2.InStorage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/plate_id_2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/plate_id_2.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basicInfo/plate_id_2.basicInfo.iml" filepath="$PROJECT_DIR$/.idea/modules/basicInfo/plate_id_2.basicInfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirstPage/plate_id_2.firstpage.iml" filepath="$PROJECT_DIR$/.idea/modules/FirstPage/plate_id_2.firstpage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/login/plate_id_2.login.iml" filepath="$PROJECT_DIR$/.idea/modules/login/plate_id_2.login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/outStorage/plate_id_2.outStorage.iml" filepath="$PROJECT_DIR$/.idea/modules/outStorage/plate_id_2.outStorage.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/cb_account_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/cb_project"
+        app:layout_constraintTop_toTopOf="@+id/sp_account_status" />
+
+    <CheckBox
+        android:id="@+id/cb_create_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/cb_project"
+        app:layout_constraintTop_toTopOf="@+id/et_create_time" />
+
+    <CheckBox
+        android:id="@+id/cb_quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/cb_project"
+        app:layout_constraintTop_toTopOf="@+id/sp_quality" />
+
+    <CheckBox
+        android:id="@+id/cb_sign_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/cb_project"
+        app:layout_constraintTop_toTopOf="@+id/et_sign_time" />
+
+    <CheckBox
+        android:id="@+id/cb_if_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/cb_project"
+        app:layout_constraintTop_toTopOf="@+id/sp_if_complete" />
+
+    <CheckBox
+        android:id="@+id/cb_tally"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/cb_project"
+        app:layout_constraintTop_toTopOf="@+id/sp_tally" />
+
+    <CheckBox
+        android:id="@+id/cb_out_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/cb_project"
+        app:layout_constraintTop_toTopOf="@+id/sp_out_form" />
+
+    <Spinner
+        android:id="@+id/sp_tally"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/sp_account_status"
+        app:layout_constraintEnd_toEndOf="@+id/sp_project"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/sp_project"
+        app:layout_constraintTop_toBottomOf="@+id/sp_quality" />
+
+    <Spinner
+        android:id="@+id/sp_account_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/et_create_time"
+        app:layout_constraintEnd_toEndOf="@+id/sp_project"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/sp_project"
+        app:layout_constraintTop_toBottomOf="@+id/sp_tally" />
+
+    <Spinner
+        android:id="@+id/sp_if_complete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/sp_quality"
+        app:layout_constraintEnd_toEndOf="@+id/sp_project"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/sp_project"
+        app:layout_constraintTop_toBottomOf="@+id/sp_out_form" />
+
+    <Spinner
+        android:id="@+id/sp_quality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/sp_tally"
+        app:layout_constraintEnd_toEndOf="@+id/sp_project"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/sp_project"
+        app:layout_constraintTop_toBottomOf="@+id/sp_if_complete" />
+
+    <Spinner
+        android:id="@+id/sp_out_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/sp_if_complete"
+        app:layout_constraintEnd_toEndOf="@+id/sp_project"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/sp_project"
+        app:layout_constraintTop_toBottomOf="@+id/sp_project" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="项目"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出库单"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_out_form"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/sp_out_form" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否已完成"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_if_complete"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/sp_if_complete" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="质检放行员"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_quality"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/sp_quality" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="理货员"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_tally"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/sp_tally" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记账状态"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_account_status"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/sp_account_status" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建时间"
+        app:layout_constraintBottom_toBottomOf="@+id/et_create_time"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/et_create_time" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="签收时间"
+        app:layout_constraintBottom_toBottomOf="@+id/et_sign_time"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/et_sign_time" />
+
+    <Spinner
+        android:id="@+id/sp_project"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/sp_out_form"
+        app:layout_constraintEnd_toStartOf="@+id/cb_project"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <EditText
+        android:id="@+id/et_create_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/et_sign_time"
+        app:layout_constraintEnd_toEndOf="@+id/sp_project"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/sp_project"
+        app:layout_constraintTop_toBottomOf="@+id/sp_account_status" />
+
+    <EditText
+        android:id="@+id/et_sign_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/btn_query"
+        app:layout_constraintEnd_toEndOf="@+id/sp_project"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/sp_project"
+        app:layout_constraintTop_toBottomOf="@+id/et_create_time" />
+
+    <CheckBox
+        android:id="@+id/cb_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sp_project"
+        app:layout_constraintTop_toTopOf="@+id/sp_project" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="查询"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_sign_time" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

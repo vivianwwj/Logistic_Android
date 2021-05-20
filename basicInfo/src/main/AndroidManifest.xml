@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wdy.basicinfo" >
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".BasicActivity"
+            android:configChanges="keyboardHidden|orientation"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CarInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            >
+
+        </activity>
+        <activity android:name="com.wdy.list.ListOnTruckActivity"
+            android:configChanges="keyboardHidden|orientation">
+
+        </activity>
+        <activity android:name=".AddCarActivity"
+            android:configChanges="keyboardHidden|orientation"
+            >
+
+        </activity>
+        <activity android:name=".ModifyCarActivity">
+
+        </activity>
+        <activity android:name="com.wdy.list.ModifyListOnTruckActivity">
+
+        </activity>
+        <activity android:name="com.wdy.list.Basic2Activity">
+
+        </activity>
+        <activity android:name="com.wdy.contract.ContractActivity">
+
+        </activity>
+        <activity android:name="com.wdy.contract.ModifyContractActivity">
+
+        </activity>
+    </application>
+
+</manifest>

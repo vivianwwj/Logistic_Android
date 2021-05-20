@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BuildInstorageForm</string>
+    <string name="modify">修改</string>
+    <string-array name="getAccount_type">
+        <item>承运方</item>
+        <item>政府</item>
+    </string-array>
+    <string-array name="getAccount_dept">
+        <item>运管部</item>
+        <item>交警部</item>
+        <item>环保部</item>
+        <item>消防部</item>
+        <item>安检部</item>
+    </string-array>
+</resources>
